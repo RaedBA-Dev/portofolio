@@ -1,0 +1,31 @@
+#disclaimer{
+    color:green;
+    font-family:'Courier New', Courier, monospace;
+    text-align:center;
+    font-size: large;
+}
+form{
+    text-align:center;
+}
+label{
+    display: block;
+    margin:1px auto;
+    color: black;
+}
+#welcoming{
+    text-align: center;
+}
+#register{
+    text-align: center;
+}
+body{
+    background-color:beige;
+}
+#vid{
+    border-color: rgb(138, 64, 207);
+    border-width: 10px;
+    border-style: groove;
+}
+input{
+    display:inline-block;
+}

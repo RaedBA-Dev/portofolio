@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de [Raed Ben Abdallah]</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="icon" href="p.jpg" type="image/icon" id="icon"/>
+    <style>
+        /* Réinitialisation de la marge et du rembourrage pour tous les éléments et définition du comportement de défilement fluide */
+        body, html {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        
+        /* Définition du style de base du corps du document */
+        body {
+            font-family: Arial, sans-serif; /* Utilisation de la police Arial par défaut */
+            line-height: 1.6; /* Espacement des lignes pour améliorer la lisibilité */
+            background-color: #f4f4f4; /* Couleur de fond claire pour le confort visuel */
+        }
+        
+        /* Style de l'en-tête fixe en haut de la page */
+        header {
+            background: #333; /* Fond sombre pour l'en-tête */
+            color: #fff; /* Texte blanc pour un contraste élevé */
+            padding: 20px 0; /* Espacement vertical à l'intérieur de l'en-tête */
+            text-align: center; /* Centrage du texte de l'en-tête */
+            position: fixed; /* Fixation de l'en-tête en haut de la page */
+            width: 100%; /* Largeur complète de l'en-tête */
+            top: 0; /* Positionné en haut de la page */
+            z-index: 1000; /* S'assure que l'en-tête reste au-dessus des autres éléments */
+            background-color: rgb(21, 116, 116);
+            height: 5.2%;
+        }
+        #about{
+             border-radius: 50%;
+             background-color: white; 
+        }
+        nav ul {
+            background-color: white;
+            border-radius: 50%;
+            padding-right: 10%;
+            margin-right: 10%;
+            margin-left: 20%;
+        }
+        .headitem{
+            color: black;
+        }
+        /* Style de la liste de navigation pour supprimer les puces et les marges */
+        nav ul {
+            list-style: none; /* Pas de puces pour les éléments de liste */
+            padding: 0; /* Pas de rembourrage à l'intérieur de la liste */
+        }
+        
+        /* Affichage des éléments de la liste de navigation en ligne */
+        nav ul li {
+            display: inline; /* Affichage en ligne pour les éléments de liste */
+            margin-right: 1%; /* Espacement à droite entre les éléments */
+        }
+        
+        /* Style des liens dans la navigation */
+        nav ul li a {
+            color: #fff; /* Texte blanc pour les liens */
+            text-decoration: none; /* Suppression du soulignement des liens */
+        }
+        
+        /* Style des sections pour un espacement adéquat */
+        section {
+            padding: 6% 1%; /* Rembourrage autour du contenu des sections */
+            margin-top: 4%; /* Espacement en haut de chaque section pour éviter la superposition avec l'en-tête fixe */
+        }
+        
+        /* Ajustement pour le contenu principal pour éviter la superposition avec l'en-tête fixe */
+        .content {
+            margin-top: 5%; /* Espacement en haut du contenu principal */
+        }
+        
+        /* Style du pied de page */
+        footer {
+            text-align: center; /* Centrage du texte dans le pied de page */
+            padding: 1% 0; /* Espacement vertical à l'intérieur du pied de page */
+            background: #333; /* Fond sombre pour le pied de page */
+            color: white; /* Texte blanc pour un contraste élevé */
+        }
+        .content{
+            background-color: rgb(10, 164, 164);
+        }
+        #pfp{
+    border-radius: 50%;
+    border-color: aqua;
+    border-style: solid;
+    }
+    #parcours{
+        border-radius: 100%;
+        background-color: aquamarine;
+        margin-right: 8%;
+    }
+    #contact{
+        text-align: center;
+        background-color: beige;
+    }
+    label{
+        display: block;
+    }
+    textarea{
+        width: 50%;
+        height: 30%;
+    }
+    #visit{
+        color: black;
+    }
+    #paragraphe{
+        text-align:start;
+        margin-left: 5px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about" class="headitem">À propos</a></li>
+                <li><a href="#parcours" class="headitem">Parcours</a></li>
+                <li><a href="#projets" class="headitem">Projets</a></li>
+                <li><a href="#contact" class="headitem">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <section id="about">
+            <h2 class="propos">À propos de moi</h2>
+        <div style="display: flex; align-items: center;">
+            <img id="pfp" src="pfp.jpg" alt="my photo" width="30%" height="30%">
+            <p class="propos" id=""><h5 id="paragraphe">Je suis Raed Ben Abdallah, un étudiant dans la faculté des sciences Economiques et de Gestion de Sfax,<br> j'étude en 1ère dans le filière Informatique de Gestion et j'ai fais une formation de<br> developpement web organiser par le club MTC FSEGS .</h5></p>
+        </div>
+        </section>    
+        <section id="parcours">
+            <h2>Mon parcours :</h2>
+            <ul>
+                <!-- Faire une liste pour afficher le parcours académique -->
+                <li><h5>Baccalauréat Economie et Gestion - 2024</h5></li>
+                <li><h5>Licence en Informatique - 2027</h5></li>
+                <li><h5>Je suis un membre du club MTC FSEGS</h5></li>
+                <img src="/pojet fseg/logo-img.png" alt="">
+                <li><h5>J'ai participer dans une formation de developpement web</h5></li>
+                <img src="participation.jpg" alt="participation" width="300px">
+                <!-- Ajouter plus d'éléments au besoin -->
+            </ul>
+            <section id="projets">
+            <h2>Des projets que j'ai fais</h2>
+            <ul>
+            <li><p><h5>Une page web representative de la faculté FSEGS :</h5></p></li>
+            </ul>
+            <button type="button" class="btn btn-primary"><a href="/pojet fseg/Home.html"><h5 id="visit">Visiter</h5></a></button>
+            </section>
+        </section>
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <p><strong>Phone number :</strong><br>27 258 641<br><strong>Email :</strong><br>benabdallahraed9@gmail.com</p>
+            <form>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message :</label>
+                <center>
+                    <textarea id="message" name="message"></textarea>
+                </center>
+                    <button type="submit" class="btn-success">Envoyer</button>
+            </form><br>
+            <a href="https://www.linkedin.com/in/raed-ben-abdallah-a8a7aa133/" ><img src="linkedin.png" alt="linkedin" width="25"></a>
+            <a href="https://www.facebook.com/raed.benabdallah.714"><img src="fb.png" alt=""></a>
+            <a href="https://www.instagram.com/raed_ben_abdallah/"><img src="insta.png" alt=""></a>
+    </div>
+    </section>
+    <footer>
+        <p>© 2024 Raed Ben Abdallah. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
